@@ -1,5 +1,5 @@
 class Calculator {
-  bool isEnabled = false; // не включений;
+  bool isEnabled = false;
 
 
   int add(int value1, int value2) {
@@ -31,7 +31,8 @@ class Calculator {
   }
 
   void info() {
-    print('Статус калькулятора: $isEnabled. Підтримує наступні дії: add - додавання, sub - віднімання, mult - множення, div - ділення.');
+    String status = isEnabled ? 'ввімкнений' : "вимкнений";
+    print('Статус калькулятора: $status. Підтримує наступні дії: add - додавання, sub - віднімання, mult - множення, div - ділення.');
   }
 
 
