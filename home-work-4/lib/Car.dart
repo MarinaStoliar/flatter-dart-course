@@ -1,12 +1,10 @@
 class Car {
   bool isEnabled = false;
   String model = '';
-  double consumptionGasOline = 0; // витрати палива на 1 км; gasoline
-  double amountGasOline = 0; // кількість бензину в баці
+  double consumptionGasoline = 0; // витрати палива на 1 км; gasoline
+  double amountGasoline = 0; // кількість бензину в баці
 
-  Car(this.model, this.consumptionGasOline, this.amountGasOline);
-
-  get liter => null;
+  Car(this.model, this.consumptionGasoline, this.amountGasoline);
 
   // метод завести машину
   void startEngine() {
@@ -15,17 +13,19 @@ class Car {
   }
 
   // метод заправки бензину
+  get liter => null;
   void refuel(double liter) {
     if (liter > 0) {
-      amountGasOline += liter;
-      print('Заправлено $liter л. У баці $amountGasOline л.');
+      amountGasoline += liter;
+      // if (amountGasoline < 70)
+      print('Заправлено $liter л. У баці $amountGasoline л.');
     }
   }
 
   // метод для проїзду 1 км
   void toOne() {
-    if (amountGasOline >= consumptionGasOline){
-      amountGasOline = amountGasOline - consumptionGasOline;
+    if (amountGasoline >= consumptionGasoline){
+      amountGasoline = amountGasoline - consumptionGasoline;
     } else print('Недостатньо бензину');
   }
 
