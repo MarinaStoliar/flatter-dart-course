@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  bool heater = true;
-  bool conditioning = true;
-  double temperature = 29;
+  int temperature = 19;
+
+  bool isHeater = false; // щоб включити обігрівач true;
+  bool isConditioning = false; // щоб включити кондиціонер true;
 
   if (temperature <= 18){
-    heater;
+    isHeater = true;
     print('Холодно, включаю обігрівач');
-  } else if (temperature > 18 && temperature <= 28) {
-    print('Комфортна температура ');
-  } else { conditioning;
+  } else if (temperature > 28) {
+    isConditioning = true;
     print('Жарко, включаю кондиціонер');
-  }
+  } else print('Комфортна температура');
 }
 
 
