@@ -1,16 +1,21 @@
-# home_work_2
+## home-work-2
+Тема: "Мультиплатформна розробка"
 
-A new Flutter project.
+## Завдання 1. Легке
+Повторити те, що було показано на занятті: створити змінні всіх типів, вивести їх у балку. Виконати
+математичні операції з деякими з них.
 
-## Getting Started
+## Завдання 2. Середнє
+Зробити контролер температури у кімнаті, тобто. програму, яка на вхід отримувала значення
+температури, але в виході виводила в лог:
+«Холодно, включаю обігрівач» - якщо температура менше 18 градусів.
+«Жарко, включаю кондиціонер» - якщо температура більше 28 градусів.
+«Комфортна температура» - якщо температура від 18 до 28 градусів.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Завдання 3. Вам не вижити :)
+Напишіть програму для автоматичної системи оплати проїзду автобусом.
+Завдання: На вході ви задаєте змінні, що характеризують пасажира (подумайте які).
+1) Якщо перед вами дитина, пропустити, плату за проїзд не брати.
+2) Якщо доросла людина, то вимагатиме плату за проїзд.
+3) Якщо оплату здійснено, то пропустити, якщо оплати немає – не пропускати.
+4) Якщо пенсіонер, то вимагатиме пенсійне посвідчення. Якщо є пропустити, інакше не пропускати.
