@@ -1,16 +1,23 @@
-# hw
+## home-work-1
+Модуль 1. Тема 1.1:
+Налаштування Flutter
+та перший проект
 
-A new Flutter project.
-    
-## Getting Started
+## Завдання 1. Легке
+Створити проект на Flutter, вивести на екран напис “Hello Flutter”. Змінити напис на інший.
+У звіті описати процес створення проекту та роботу з кодом.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Завдання 2. Середнє
+Далі малюватимемо в лозі:
+- Задумайте нескладну фігуру
+- Підберіть літери чи символи, з яких можна утворити цю фігуру
+- «Намалюйте» фігуру у консолі, використовуючи print(‘your text’)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Завдання 3. Вам не вижити :)
+Відформатовати напис з легкого завдання у Flutter:
+1) Змінити розмір шрифту на 24pt
+2) Зробити шрифт italic (похилий)
+3) Змінити колір шрифта на синій
+   Підказка: гуглимо щось подібне до «flutter text italic»
