@@ -12,7 +12,7 @@ void main() {
 
   List<String> updatedDataBase = List.from(dataBase);
 
-  for (int i = 0; i < updatedDataBase.length; i++ ) {
+  for (int i = 0; i < updatedDataBase.length; i++) {
     if (updatedDataBase[i] == oldName) {
       updatedDataBase[i] = newName;
       break;
