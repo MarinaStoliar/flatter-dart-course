@@ -1,18 +1,24 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  double startDeposit = 1000;
-  double deposit = startDeposit;
-  int years = 0;
-  double annual = 0.05;
+  List<String> dataBase = [
+    'ТОВ Фенікс',
+    'ВАТ Метсбут', 'ПП Іванов', 'ВАТ Шаурма', 'ВАТ Меблі',
+    'ТОВ ЕПАМ', 'ТОВ Буд', 'ТОВ ФоззіГруп', 'ТОВ МеталГруп', 'ТОВ Wog'
+  ];
 
-  while (deposit < startDeposit * 2){
-    deposit *= annual;
-    years++;
-    print('Your deposit is' + deposit.toStringAsFixed(2));
+  String oldName = 'ВАТ Шаурма';
+  String newName = 'ВАТ Пиріжки';
+
+  List<String> updatedDataBase = [];
+
+  for (int i = 0; i < dataBase.length; i++ ) {
+    if ( dataBase[i] == oldName) {
+      dataBase[i] = newName;
+      updatedDataBase = List.from(dataBase);
+      print(updatedDataBase);
+      break;
+    }
   }
-  print('You reached 2x money after ${years} year(s)');
-
 }
-
 
