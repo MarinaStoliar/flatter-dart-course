@@ -10,14 +10,12 @@ void main() {
   String oldName = 'ВАТ Шаурма';
   String newName = 'ВАТ Пиріжки';
 
-  List<String> updatedDataBase = List.from(dataBase);
+  List<String> updatedDataBase = [];
 
-  for (int i = 0; i < updatedDataBase.length; i++) {
-    if (updatedDataBase[i] == oldName) {
-      updatedDataBase[i] = newName;
-      break;
-    }
+  for (int i = 0; i < dataBase.length; i++) {
+    updatedDataBase.add(dataBase[i] == oldName ? newName : dataBase[i]);
   }
   print(updatedDataBase);
+
 }
 
