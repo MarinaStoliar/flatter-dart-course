@@ -6,7 +6,7 @@ void main() {
   double height = 0.0;
 
   // Обрати фігуру
-  int choice = 3;
+  int choice = 2;
 
   switch (choice) {
     case 1:
