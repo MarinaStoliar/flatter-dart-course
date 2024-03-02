@@ -5,10 +5,11 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
- // const MyApp({super.key});
+  const MyApp({super.key});
 
-  final _sizeTextBlack = const TextStyle(fontSize: 20.0, color: Colors.black);
-  final _sizeTextWhite = const TextStyle(fontSize: 20.0, color: Colors.white);
+  void printFirst() {
+    print("Registration button pressed");
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
+            children: [
               Container(
                 width: 300,
                 child: Text(
@@ -29,18 +30,17 @@ class MyApp extends StatelessWidget {
               Container(
                 width: 300,
                 child: TextFormField(
-                  style: _sizeTextBlack,
+                  style: TextStyle(fontSize: 20.0, color: Colors.black),
                   maxLength: 50,
                   decoration: InputDecoration(labelText: "Логін"),
                   keyboardType: TextInputType.emailAddress,
                 ),
               ),
-
               Container(
                 width: 300,
                 padding: EdgeInsets.only(top: 10.0),
                 child: TextFormField(
-                  style: _sizeTextBlack,
+                  style: TextStyle(fontSize: 20.0, color: Colors.black),
                   maxLength: 30,
                   obscureText: true,
                   decoration: InputDecoration(
@@ -52,22 +52,29 @@ class MyApp extends StatelessWidget {
                   width: 300,
                   padding: EdgeInsets.only(top: 10.0),
                   child: TextFormField(
-                    style: _sizeTextBlack,
+                    style: TextStyle(fontSize: 20.0, color: Colors.black),
                     maxLength: 30,
                     obscureText: true,
                     decoration: InputDecoration(
-                        labelText: "Поле для підтвердження пароля"
+                        labelText: "Підтвердження паролю"
                     ),
                   )
               ),
               ElevatedButton(
-                onPressed: (){
-                  print("Registration button pressed");
-                },
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.grey),
+                  foregroundColor: MaterialStateProperty.all(Colors.white),
+                  overlayColor: MaterialStateProperty.all(Colors.green),
+                  shape: MaterialStateProperty.all(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.horizontal(),
+                      side: BorderSide(color: Colors.black),
+                    ),
+                  ),
+                ),
+                onPressed: printFirst,
                 child: Text("Register"),
-              )
-
-
+              ),
             ],
           )
         ),
